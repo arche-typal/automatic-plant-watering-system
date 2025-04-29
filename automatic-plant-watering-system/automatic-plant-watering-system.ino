@@ -20,7 +20,7 @@ void setup() {
   Serial.begin(115200);  //Initialize serial communication at 115200 baud rate
   Serial.println("ESP32 is responsive!");  // Print a test message
 
-  //Code for connecting to wi-fi
+  //Code for connecting to WiFi
   WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED) {
