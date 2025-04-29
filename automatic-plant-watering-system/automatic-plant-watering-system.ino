@@ -38,7 +38,7 @@ void setup() {
 void loop() {
   Serial.printf("Count: %d\n", count);
   count++;
-  Serial.printf("ESP32 ip address: %s\n", WiFi.localIP());
+  // Serial.printf("ESP32 ip address: %s\n", WiFi.localIP());
   Serial.printf("Connected to SSID: %s\n", WiFi.SSID());
   Serial.printf("Signal strength (RSSI):  %d dBm\n", WiFi.RSSI()); 
 
