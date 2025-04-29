@@ -53,9 +53,9 @@ void loop() {
     lastTime = millis();
     bool success = false;
     if (count % 2 == 0) {        
-      success = client.publish("plant/sensori", "{\"soil\":45.0, \"moisture\":67.2}");
+      success = client.publish("plant/sensor", "{\"soilMoisture\":45.0, \"roomTemp\":67.2}, \"pumpOn\":false}");
     } else {        
-      success = client.publish("plant/sensori", "{\"soil\":46.0, \"moisture\":68.2}");
+      success = client.publish("plant/sensor", "{\"soilMoisture\":46.0, \"roomTemp\":68.2}, \"pumpOn\":true}");
     }
     if (success) {
       Serial.println("MQTT publish succeeded");
