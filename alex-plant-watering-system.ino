@@ -2,7 +2,7 @@
 #include <PubSubClient.h>
 #include <Secrets.h>
 
-//wifi credentials
+//WiFi credentials
 const char* ssid = Secrets::wifiSSID();
 const char* password = Secrets::wifiPass();
 
@@ -17,7 +17,7 @@ uint32_t count = 0;
 uint32_t mqtt_count = 0;
 
 void setup() {
-  Serial.begin(115200);  // Initialize serial communication at 115200 baud rate
+  Serial.begin(115200);  //Initialize serial communication at 115200 baud rate
   Serial.println("ESP32 is responsive!");  // Print a test message
 
   //Code for connecting to wi-fi
