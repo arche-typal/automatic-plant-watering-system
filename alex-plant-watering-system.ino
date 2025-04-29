@@ -65,7 +65,7 @@ void loop() {
         Serial.println("Published soil moisture: 46.0");
       }
     } else {
-      Serial.println(" MQTT publish FAILED");
+      Serial.println("MQTT publish FAILED");
     }
   }
 
